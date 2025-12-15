@@ -508,7 +508,7 @@
         }).addTo(map);
         
         // 存儲當前WFS URL
-        var currentWfsUrl = 'https://portal.csdi.gov.hk/server/services/common/edb_rcd_1633320960920_77011/MapServer/WFSServer?service=wfs&request=GetFeature&typenames=edb_poa__poa&outputFormat=geojson&maxFeatures=50';
+        var currentWfsUrl = 'https://api.allorigins.win/get?url=https://portal.csdi.gov.hk/server/services/common/edb_rcd_1633320960920_77011/MapServer/WFSServer?service=wfs&request=GetFeature&typenames=edb_poa__poa&outputFormat=geojson&maxFeatures=50';
         
         // 函數：獲取WFS數據
         function fetchWFSData(url) {
@@ -545,7 +545,8 @@
                     $('#liveFeatureCount').html('<i class="fas fa-exclamation-triangle" style="color: #e74c3c;"></i> 載入數據時出錯');
                     
                     // 備用：如果遠程服務器失敗，嘗試使用本地樣本數據
-                    loadSampleData();
+                    // loadSampleData();
+                    // window.open("https://api.allorigins.win/get?url=", "_href");
                 }
             });
         }
