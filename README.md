@@ -1,0 +1,1 @@
+# hk-gov-opendata-edb-itmospoa-poa-schoolnet-list
